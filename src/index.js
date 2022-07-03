@@ -12,7 +12,7 @@ import { AppProvider } from './context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AppProvider>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     < Routes>
         <Route path = '/' element = { <Home />} />
         <Route path = 'about' element = { <About />} />
